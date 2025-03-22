@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJIB MANDAL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="jgeclogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Competetive Programmer</p>
+            <h1>Hi Everyone, I'm <span>Rajib</span><br>Mandal</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="portres.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Rajib Mandal and I am currently pursuing Bachelor of Technolgy in computer science engineering from Jalpaiguri Government Engineering College autonomous.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C(Advanced)</span><br>python(Basic) <br>Java(Basic)</li>
+                        <li><span>Web Development</span><br>Frontend Development <br> Tailwind CSS <br>JavaScript(Intermediate) <br>Node js,Express js <br>noSQL,Mongodb</li>
+                        <li><span>C++(Advanced)</span><br>Data structure Algorithms(Advanced)<br>OOPS(Intermediate)</li>
+                        
+                    </ul>
+                </div>
+                <!-- <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div> -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2027</span><br> Jalpaiguri Government Engineering College</li>
+                        <li><span>2023</span><br>WBCHSE from Mainaguri High School</li>
+                        <li><span>2021</span><br>WBBSE from Ratherhat High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="leetcode.jpg">
+                <div class="layer">
+                    <h3>Leetcode Metrics Website</h3>
+                    <p>This website help you to find out your leetcode statistics</p>
+                    <a href="https://rajibmandal43.github.io/Leetcode-statistics/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="th.jpg">
+                <div class="layer">
+                    <h3>Easy game website</h3>
+                    <p>This game is made by basic html,css,javascript.Here you can see your score after clearing one obstacle after another</p>
+                    <a href="https://rajibmandal43.github.io/Action-game/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="weather.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>This App will help you to find out the current temperature in celsious of any valid places.</p>
+                    <a href="https://rajibmandal43.github.io/weatherapp/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>rajibmandal8010@gmail.com</p>
+                <p>7601944038</p>
+                <div class="social-icons">
+                    <a href="https://github.com/hey1234580"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.codechef.com/users/rajibmandal801"><img src="codechef.png" alt="" height="32px" width="40px"></a>
+                    <a href="https://codeforces.com/profile/rajib2343"><img src="forces.png" alt="" height="32px" width="40px"></a>
+                    <a href="https://leetcode.com/u/Hey1234567890/"><img src="codee.png" alt="" height="32px" width="40px"></a>
+                    <a href="https://www.linkedin.com/in/rajib-mandal-470ab1289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="main_tex (3).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form method="post" action="https://script.google.com/macros/s/AKfycbw730BJsIiYnaWbZtVsouqcjBGJqU6ns8xaVsFCoEdBAB1uKBp2FUa-j8HIUMoq2Fhc/exec" name="contact-form">
+                  <input type="text" name="your-name" placeholder="Name">
+                  <input type="text" name="your-number" placeholder="Number">
+                  <input type="email" name="your-email" placeholder="Email">
+                  <textarea name="message" rows="7" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rajib. Please <i class="fas fa-heart"></i> connect <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">with me</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw730BJsIiYnaWbZtVsouqcjBGJqU6ns8xaVsFCoEdBAB1uKBp2FUa-j8HIUMoq2Fhc/exec'
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you for your feedback!" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+</script>
+
+  
+
+</body>
+</html>
